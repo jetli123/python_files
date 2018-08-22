@@ -1,0 +1,8 @@
+format = "Pi with three decimals: %.3f"
+import math
+print format % math.pi
+
+import string
+s = string.Template('$x, name $x!')
+s.substitute(x='slurm')
+

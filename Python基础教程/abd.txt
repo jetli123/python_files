@@ -1,0 +1,10 @@
+First line 
+second line
+Third line
+User-Agent: Microsoft-Outlook-Express
+Date: Wed. 19 Dec 2008 18:22:42 -0900
+Subject: Re: Spam
+From: Foo Fie <foo@bar.com>
+TO: Magnus Lie Hetland <magnus@bozz.floop>
+CC: <Mr. Gumby@bar.com>
+Status: RO
