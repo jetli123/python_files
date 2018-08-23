@@ -48,7 +48,7 @@ try:
     server = smtplib.SMTP()
     server.connect(HOST, "25")
     server.starttls()  # 启动安全传输模式
-    server.login(FROM, "lilianjie1988")
+    server.login(FROM, "password to you")
     server.sendmail(FROM, TO, msg.as_string())
     server.quit()
     print("邮件发送成功！")
