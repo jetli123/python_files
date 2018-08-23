@@ -10,3 +10,7 @@ $ git config --global user.email "email@example.com"
 3.执行 git add filename or dirname   添加到索引库中
 4.执行 git commit -m "描述"  提交索引库中的内容
 5.执行 git push -u origin master  上传本地仓库项目到GitHub官网中的库里
+
+
+退出客户端后，重新登录git.bash
+首先要 同步代码：git pull
