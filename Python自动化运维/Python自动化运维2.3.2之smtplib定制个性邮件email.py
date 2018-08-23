@@ -41,7 +41,7 @@ try:
     server.connect(HOST, "25")  # 通过connect 方法连接smtp 主机
     server.starttls()  # 启动安全传输模式
     server.set_debuglevel(1)
-    server.login("llj_0824@163.com", "lilianjie1988")  # 邮箱帐号登录检验
+    server.login("llj_0824@163.com", "mypassword")  # 邮箱帐号登录检验
     server.sendmail(FROM, TO, msg.as_string())  # 邮件发送
     server.quit()  # 断开smtp 连接
     print "邮件发送成功！"
