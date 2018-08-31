@@ -21,20 +21,19 @@
 # """
 import base64
 
-
-print base64.b64encode(b'binary string abc')
+print(base64.b64encode(b'binary string abc'))
 # YmluYXJ5AHN0cmluZwBhYmM=
-print base64.b64decode(b'YmluYXJ5AHN0cmluZwBhYmM=')
+print(base64.b64decode(b'YmluYXJ5AHN0cmluZwBhYmM='))
 # binary string abc
 
 # 由于标准的 Base64 编码后可能出现字符+和/，在 URL 中就不能直接作
 # 为参数，所以又有一种"url safe"的 base64 编码，其实就是把字符+和/分
 # 别变成-和_：
-print base64.b64encode(b'i\xb7\x1d\xfb\xef\xff')
+print(base64.b64encode(b'i\xb7\x1d\xfb\xef\xff'))
 # abcd++//
-print base64.urlsafe_b64encode(b'i\xb7\x1d\xfb\xef\xff')
+print(base64.urlsafe_b64encode(b'i\xb7\x1d\xfb\xef\xff'))
 # abcd--__   将 ++// 转换为 --__
-print base64.urlsafe_b64decode(b'abcd--__')
+print(base64.urlsafe_b64decode(b'abcd--__'))
 
 # 例子：推算 b 的 base64 编码
 # bin(ord('b'))  # 0b1100010
@@ -49,7 +48,7 @@ print base64.urlsafe_b64decode(b'abcd--__')
 
 
 """练习：i"""
-print bin(ord('i')) # 0b1101001
+print(bin(ord('i')))  # 0b1101001
 # 01101001 00000000 00000000  以24位，8位分割表示：
 # 011010 010000 000000 000000  以24位，6位分割表示:
 # 6位如何以8位形式表示，在前面补0，即

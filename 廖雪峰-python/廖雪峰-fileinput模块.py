@@ -9,5 +9,5 @@ import fileinput                         #
 for line in fileinput.input(inplace=True): #  9 
     line = line.rstrip()                 # 10 
     num = fileinput.lineno()             # 11 
-    print '%-40s # %2i ' % (line, num)   # 12 
-    raw_input("Enter any one!")
+    print('%-40s # %2i ' % (line, num))  # 12
+    input("Enter any one!")

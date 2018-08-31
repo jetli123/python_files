@@ -3,7 +3,7 @@ __author__ = 'JetLi'
 
 
 f = open('G:\\PyCharm\\untitled\\abd.txt', 'r')
-print f.read(9)
+print(f.read(9))
 f.close()
 
 with open('G:\\PyCharm\\untitled\\dfasdf.txt', 'r') as b:

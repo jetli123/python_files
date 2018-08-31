@@ -16,7 +16,8 @@ try:
     cursor.execute(r"insert into user values('A-002', 'Bart', 62)")
     cursor.execute(r"insert into user values('A-003', 'Lisa', 78)")
 except StandardError as e:
-    print 'StandardError: ', e
+    assert isinstance(e, object)
+    print('StandardError: ', e)
 finally:
     cursor.close()  # 关闭游标
     conn.commit()  # 提交事物
@@ -30,10 +31,10 @@ def get_score_in(low, high):
         value = cursor1.fetchall()
         return value
     except StandardError as f:
-        print 'StandardError: ', f
+        print('StandardError: ', f)
     finally:
         cursor1.close()
         conn1.close()
 
 if __name__ == '__main__':
-    print get_score_in(60, 80)
+    print(get_score_in(60, 80))
